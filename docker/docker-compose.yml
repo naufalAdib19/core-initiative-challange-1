@@ -1,0 +1,12 @@
+version: '3.7'
+name: vueapp-batchseptember
+services:
+  web:
+    container_name: web-september
+    build:
+      context: ..
+      dockerfile: docker/DockerFile
+    ports:
+    - '8085:8080'
+    volumes:
+    - '..:/app'

@@ -1,11 +1,17 @@
 export type data = {
     nama: string,
-    avatar: string,
+    avatar?: string,
     action: string,
-    time: string,
-    hasRead: boolean,
+    time?: string,
+    hasRead?: boolean,
     message?: string
 }[]
+
+export type bodyNotif = {
+    nama: string,
+    action: string,
+    message: string
+}
 
 export const notif: data = [
         {
