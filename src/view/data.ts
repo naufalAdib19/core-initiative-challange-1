@@ -4,7 +4,7 @@ export type data = {
     action: string,
     time: string,
     hasRead: boolean,
-    message: string
+    message?: string
 }[]
 
 export const notif: data = [
@@ -14,7 +14,6 @@ export const notif: data = [
             action: 'join',
             time: '1 day ago',
             hasRead: true,
-            message: ''
         },
         {
             nama: 'Angela Gray',
@@ -22,7 +21,6 @@ export const notif: data = [
             action: 'follow',
             time: '5 min ago',
             hasRead: true,
-            message: ''
         },
         {
             nama: 'Rizky Hasanuddin',

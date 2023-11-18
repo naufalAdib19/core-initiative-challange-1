@@ -1,0 +1,16 @@
+name: Testing Workflow
+
+on:
+  push:
+  Workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-lates
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: install package
+        run: npm i
+      - name: run test cases
+        run: npm run test
